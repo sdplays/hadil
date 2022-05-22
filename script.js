@@ -1,16 +1,20 @@
-const main = document.querySelector('.main');
+var main = document.querySelector('.main');
 const h1 = document.querySelector('h1');
 const div = document.querySelector('div');
 var Rb =  Math.floor(Math.random() * 100) +'%' ;
-main.style.width = '600px';
-main.style.height = '400px';
-main.style.left =  '50px';
+main.style.width = '900px';
+main.style.height = '450px';
+main.style.left =  '70px';
 main.style.top = '60px';
 main.style.backgroundColor = "#"+
  Math.floor(Math.random()*16777215).toString(16);
 
 const ball = document.createElement('div');
-var b = {x:50,y:30,w:Math.floor(Math.random() * 600),h:Math.floor(Math.random() * 400),dx:Math.floor(Math.random() * 40),dy:Math.floor(Math.random() * 40),ani:{},move:false};
+var b = {x:50,y:30,w:Math.floor(Math.random() * 800),h:Math.floor(Math.random() * 
+
+400),dx:Math.floor(Math.random() * 40),dy:Math.floor(Math.random() * 40),ani:
+
+{},move:false};
 ball.style.backgroundColor = "#"+
  Math.floor(Math.random()*16777215).toString(16);
 ball.style.borderRadius = Rb;
@@ -22,7 +26,11 @@ ball.style.position = 'relative';
 h1.addEventListener('click',()=>{
   main.style.backgroundColor = "#"+
  Math.floor(Math.random()*16777215).toString(16);
-   b = {x:50,y:30,w:Math.floor(Math.random() * 600),h:Math.floor(Math.random() * 400),dx:Math.floor(Math.random() * 40),dy:Math.floor(Math.random() * 40),ani:{},move:false};
+   b = {x:50,y:30,w:Math.floor(Math.random() * 800),h:Math.floor(Math.random() * 
+
+40),dx:Math.floor(Math.random() * 40),dy:Math.floor(Math.random() * 40),ani:
+
+{},move:false};
 ball.style.backgroundColor = "#"+
  Math.floor(Math.random()*16777215).toString(16);
 ball.style.borderRadius = Rb;
@@ -45,13 +53,13 @@ div.addEventListener('click',()=>{
   
 })
 function mover(){
-  if(b.x>600-b.w || b.x < 0){
+  if(b.x>900-b.w || b.x < 0){
     b.dx *= -1;
     
     ball.style.backgroundColor = "#"+
  Math.floor(Math.random()*16777215).toString(16);
   }
-  if(b.y>400-b.h || b.y < 0){
+  if(b.y>450-b.h || b.y < 0){
     b.dy *= -1;
     
     
