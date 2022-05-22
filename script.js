@@ -3,8 +3,8 @@ var h1 = document.querySelector('h1');
 var div = document.querySelector('div');
 var Rb =  Math.floor(Math.random() * 100) +'%' ;
 
-main.style.width = '1200px';
-main.style.height = '450px';
+main.style.width = '1600px';
+main.style.height = '650px';
 main.style.left =  '70px';
 main.style.top = '60px';
 main.style.backgroundColor = "#"+
