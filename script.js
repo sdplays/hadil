@@ -152,21 +152,28 @@ le.svg/1200px-YouTube_social_white_squircle.svg.png',
   'https://icones.pro/wp-content/uploads/2021/03/logo-icone-tiktok-simbolo.png',
   'https://cdn3.f-cdn.com/contestentries/1528078/19433701/5d19c2cd44ae0_thumb900.jpg',
 'https://miro.medium.com/max/1200/1*cLQUX8jM2bMdwMcV2yXWYA.jpeg'];
+
 var main = document.querySelector('.main');
+
 var h1 = document.querySelector('h1');
+
 var div = document.querySelector('div');
+
 var ball = new Image();
+
 ball.src = list[i]
+
+
 document.getElementById('body').appendChild(ball);
 main.style.width = '1100px';
 main.style.height = '500px';
 main.style.left =  '50px';
 main.style.top = '60px';
   main.style.backgroundColor = "black";
-   b = {x:Math.floor(Math.random() * 300),y:Math.floor(Math.random() * 
+   b = {x:Math.floor(Math.random() * 600),y:Math.floor(Math.random() * 
 
 100),w:Math.floor(Math.random() * 300)+40,h:Math.floor(Math.random() * 
-100)+40,dx:Math.floor(Math.random() * 30),dy:Math.floor(Math.random() * 30),ani:
+100)+40,dx:Math.floor(Math.random() * 20),dy:Math.floor(Math.random() * 20),ani:
 
 {},move:false};
 ball.style.left = b.x + 'px';
@@ -183,10 +190,10 @@ h1.addEventListener('click',()=>{
   main.style.backgroundColor = "black";
   Rb =  Math.floor(Math.random() * 60) +'%' ;
    
-   b = {x:Math.floor(Math.random() * 100),y:Math.floor(Math.random() * 
+   b = {x:Math.floor(Math.random() * 500),y:Math.floor(Math.random() * 
 
 100),w:Math.floor(Math.random() * 300)+40,h:Math.floor(Math.random() * 
-300)+40,dx:Math.floor(Math.random() * 30),dy:Math.floor(Math.random() * 30),ani:
+300)+40,dx:Math.floor(Math.random() * 20),dy:Math.floor(Math.random() * 20),ani:
 
 {},move:false};
   i =Math.floor(Math.random() *
@@ -199,6 +206,8 @@ ball.style.height = b.h +'px';
  ball.style.borderRadius = Rb;
    
 })
+
+
 div.addEventListener('click',()=>{
   
   if(!b.move){
@@ -213,7 +222,7 @@ ball.addEventListener('click',()=>{
   var img = new Image();
 img.src = list[l]
 document.getElementById('body').appendChild(img);
-img.style.borderRadius =  Math.floor(Math.random() * 100) +'%' ;
+img.style.borderRadius =  Math.floor(Math.random() * 60) +'%' ;
   
 img.style.left = Math.floor(Math.random() * 100)+ 'px';
 img.style.top = Math.floor(Math.random() * 100)+'px';
