@@ -1,7 +1,7 @@
 var main = document.querySelector(".main");
 var h1 = document.querySelector('h1');
 var div = document.querySelector('div');
-var Rb =  Math.floor(Math.random() * 80) +'%' ;
+var Rb =  Math.floor(Math.random() * 100) +'%' ;
 
 main.style.width = '1200px';
 main.style.height = '500px';
@@ -11,9 +11,9 @@ main.style.backgroundColor = "#"+
  Math.floor(Math.random()*16777215).toString(16);
 
 const ball = document.createElement('div');
-var b = {x:50,y:30,w:Math.floor(Math.random() * 600),h:Math.floor(Math.random() * 
+var b = {x:50,y:30,w:Math.floor(Math.random() * 500)+30,h:Math.floor(Math.random() * 
 
-450),dx:Math.floor(Math.random() * 30),dy:Math.floor(Math.random() * 30),ani:
+400)+50,dx:Math.floor(Math.random() * 15),dy:Math.floor(Math.random() * 15),ani:
 
 {},move:false};
 ball.style.backgroundColor = "#"+
@@ -28,9 +28,9 @@ ball.style.position = 'relative';
 h1.addEventListener('click',()=>{
   main.style.backgroundColor = "#"+
  Math.floor(Math.random()*16777215).toString(16);
-   b = {x:50,y:30,w:Math.floor(Math.random() * 600),h:Math.floor(Math.random() * 
+   b =  {x:50,y:30,w:Math.floor(Math.random() * 500)+30,h:Math.floor(Math.random() * 
 
-450),dx:Math.floor(Math.random() * 30),dy:Math.floor(Math.random() * 30),ani:
+400)+50,dx:Math.floor(Math.random() * 15),dy:Math.floor(Math.random() * 15),ani:
 
 {},move:false};
 ball.style.backgroundColor = "#"+
@@ -40,7 +40,7 @@ ball.style.width = b.w +'px';
 ball.style.height = b.h +'px';
 ball.style.left = b.x + 'px';
 ball.style.top = b.y +'px';
-  Rb =  Math.floor(Math.random() * 80) +'%' ;
+  Rb =  Math.floor(Math.random() * 100) +'%' ;
    
 })
 div.addEventListener('click',()=>{
