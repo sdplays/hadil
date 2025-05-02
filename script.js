@@ -13,7 +13,7 @@ main.style.backgroundColor = "#"+
 const ball = document.createElement('div');
 var b = {x:50,y:30,w:Math.floor(Math.random() * 500)+30,h:Math.floor(Math.random() * 
 
-400)+50,dx:Math.floor(Math.random() * 5)+2,dy:Math.floor(Math.random() * 5)+1,ani:
+400)+50,dx:Math.floor(Math.random() * 5),dy:Math.floor(Math.random() * 5),ani:
 
 {},move:false};
 ball.style.backgroundColor = "#"+
@@ -30,7 +30,7 @@ h1.addEventListener('click',()=>{
  Math.floor(Math.random()*16777215).toString(16);
    b =  {x:50,y:30,w:Math.floor(Math.random() * 500)+30,h:Math.floor(Math.random() * 
 
-400)+50,dx:Math.floor(Math.random() * 5)+2,dy:Math.floor(Math.random() * 5)+1,ani:
+400)+50,dx:Math.floor(Math.random() * 5),dy:Math.floor(Math.random() * 5),ani:
 
 {},move:false};
 ball.style.backgroundColor = "#"+
