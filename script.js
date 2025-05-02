@@ -11,9 +11,9 @@ main.style.backgroundColor = "#"+
  Math.floor(Math.random()*16777215).toString(16);
 
 const ball = document.createElement('div');
-var b = {x:50,y:30,w:Math.floor(Math.random() * 500)+30,h:Math.floor(Math.random() * 
+var b = {x:50,y:30,w:Math.floor(Math.random() * 400)+30,h:Math.floor(Math.random() * 
 
-400)+50,dx:Math.floor(Math.random() * 5),dy:Math.floor(Math.random() * 5),ani:
+300)+50,dx:Math.floor(Math.random() * 3),dy:Math.floor(Math.random() * 3),ani:
 
 {},move:false};
 ball.style.backgroundColor = "#"+
@@ -28,9 +28,9 @@ ball.style.position = 'relative';
 h1.addEventListener('click',()=>{
   main.style.backgroundColor = "#"+
  Math.floor(Math.random()*16777215).toString(16);
-   b =  {x:50,y:30,w:Math.floor(Math.random() * 500)+30,h:Math.floor(Math.random() * 
+   b =  {x:50,y:30,w:Math.floor(Math.random() * 400)+30,h:Math.floor(Math.random() * 
 
-400)+50,dx:Math.floor(Math.random() * 5),dy:Math.floor(Math.random() * 5),ani:
+300)+50,dx:Math.floor(Math.random() * 3),dy:Math.floor(Math.random() * 3),ani:
 
 {},move:false};
 ball.style.backgroundColor = "#"+
